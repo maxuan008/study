@@ -1,4 +1,20 @@
  /*egg
+ |──零碎知识点
+ │  require('') , require出了可以引入npm包的作用， 也可以引入指定文件（如：自己写的）并传递参数，达到一定效果;例：
+ │    require(path.join(routerPath, filename))(app)
+ │      解：通过require引入路由文件, 并传 app 参数， 可以实现在egg启动时， 将路由按功能进行切割而不需全部放在一个router文件中
+ │
+ │  loadToApp , 可以自己写成对象或类(class),  在根目录下的app.js使用此方法可以将其挂载到app下
+ │
+ │
+ │
+ │
+ │
+ │
+ │
+ │
+ │
+ │
  ├──框架应用
  │  *egg内置着一些主要的对象: app,ctx, req,res以及一些扩展对象controller, service, helper, config, logger
  │  
